@@ -2,7 +2,7 @@
 
 https://github.com/cashapp/sqldelight
 
-Initial Support for Window Function Calls in [SqlDelight 2.1.0-SNAPSHOT](https://github.com/sqldelight/sqldelight/pull/5163)
+Initial Support for Window Function Calls in [SqlDelight 2.2.0-SNAPSHOT](https://github.com/sqldelight/sqldelight/pull/5163)
 
 Not currently supported in SqlDelight grammar is the `WINDOW` clause
 

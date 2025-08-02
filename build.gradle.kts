@@ -9,7 +9,7 @@ group = "griffio"
 version = "1.0-SNAPSHOT"
 
 repositories {
-    maven(url = "https://oss.sonatype.org/content/repositories/snapshots")
+    maven(url = "https://central.sonatype.com/repository/maven-snapshots/")
     mavenCentral()
     google()
 }
@@ -18,6 +18,7 @@ dependencies {
     implementation(libs.sqldelight.jdbc.driver)
     implementation(libs.google.truth)
     api(libs.sqldelight.postgresql.dialect)
+    api(libs.sqldelight.coroutines)
     testImplementation(kotlin("test"))
 }
 
@@ -68,7 +69,7 @@ application {
 //:( Without this you may see an error like the following: No database found to handle jdbc:...
 buildscript {
     repositories {
-        maven(url = "https://oss.sonatype.org/content/repositories/snapshots")
+        maven(url = "https://central.sonatype.com/repository/maven-snapshots/")
         mavenCentral()
     }
     dependencies {
